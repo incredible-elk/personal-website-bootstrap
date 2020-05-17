@@ -19,15 +19,26 @@
     >
       <h1 class="col">Stephanie Geuder</h1>
 
-      <nav class="col">
-        <a href="#contact">Contact</a>
-        <a href="#biography">Biography</a>
+      <nav class="col nav pb-4 pt-2">
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#biography">Biography</a>
       </nav>
     </header>
 
     <main>
       <div class="row shadow">
-        <div class="card" style="width: 18rem;">
+        <figure class="col">
+          <img
+            class="img-fluid"
+            src="/img/WhatsApp Image 2020-05-15 at 18.26.15.jpeg"
+            alt="Stephanie Geuder sitting on rocks on the shore of the river Elbe"
+          />
+          <figcaption class="text-center md-text-left">
+            Me, enjoying the sun on the shore of river Elbe
+          </figcaption>
+        </figure>
+        <!--
+        <div class="card mb-3" style="width: 18rem;">
           <img
             src="/img/WhatsApp Image 2020-05-15 at 18.26.15.jpeg"
             class="card-img-top img-fluid round-circle"
@@ -39,36 +50,45 @@
             </p>
           </div>
         </div>
+        -->
 
         <div>
-          <h4>Skills</h4>
-          <span class="badge badge-light">HTML</span>
-          <span class="badge badge-light">Bootstrap</span>
-          <span class="badge badge-light">CSS</span>
-          <span class="badge badge-light">JavaScript</span>
-          <span class="badge badge-light">Shell</span>
-          <span class="badge badge-light">Git</span>
+          <div class="col-12 mb-2">
+            <h2 class="h4">Skills</h2>
+            <span class="badge badge-light">HTML</span>
+            <span class="badge badge-light">Bootstrap</span>
+            <span class="badge badge-light">CSS</span>
+            <span class="badge badge-light">JavaScript</span>
+            <span class="badge badge-light">Shell</span>
+            <span class="badge badge-light">Git</span>
+          </div>
 
-          <h4>Interests</h4>
-          <span class="badge badge-light">Yoga</span>
-          <span class="badge badge-light">Bouldering</span>
-          <span class="badge badge-light">Cooking</span>
-          <span class="badge badge-light">Lettering</span>
-          <span class="badge badge-light">Drawing</span>
-          <span class="badge badge-light">Sneak Preview</span>
+          <div class="col-12 mb-2 mt-3">
+            <h2 class="h4">Interests</h2>
+            <span class="badge badge-light">Yoga</span>
+            <span class="badge badge-light">Bouldering</span>
+            <span class="badge badge-light">Cooking</span>
+            <span class="badge badge-light">Lettering</span>
+            <span class="badge badge-light">Drawing</span>
+            <span class="badge badge-light">Sneak Preview</span>
+          </div>
         </div>
       </div>
 
-      <address class="row shadow" id="contact">
-        <a class="col" href="040 00834822">Num: 040 00834822</a>
-        <a class="col" href="37314329+incredible-elk@users.noreply.github.com"
-          >fish@neuefische.de</a
+      <address class="row shadow mt-3 mb-5" id="contact">
+        <a class="col-12 col-md-6 mb-4 text-break" href="040 00834822"
+          >Num: <br class="md-hidden mb-1" />040 00834822</a
+        >
+        <a
+          class="col-12 col-md-6"
+          href="37314329+incredible-elk@users.noreply.github.com"
+          >Mail: <br class="md-hidden mb-1" />fish@neuefische.de</a
         >
       </address>
 
       <div class="row shadow">
         <a
-          class="col-12 col-md-4 mb-2 align-items-center"
+          class="col-12 col-md-4 mb-2 d-flex justify-content-center"
           href="http://github.com/incredible-elk"
           target="_blank"
           rel="noopener noreferrer"
@@ -76,17 +96,17 @@
           <div class="card" style="width: 18rem;">
             <img
               src="/img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"
-              class="card-img-top"
+              class="card-img-top img-fluid"
               alt="GitHub Logo"
             />
             <div class="card-body">
-              <p class="card-text">My GitHub</p>
+              <p class="card-text text-center text-body">My GitHub</p>
             </div>
           </div>
         </a>
 
         <a
-          class="col-12 col-md-4 mb-2 align-items-center"
+          class="col-12 col-md-4 mb-2 d-flex justify-content-center"
           href="http://codepen.io/incredible-elk"
           target="_blank"
           rel="noopener noreferrer"
@@ -98,13 +118,13 @@
               alt="Codepen Logo"
             />
             <div class="card-body">
-              <p class="card-text">My Codepen</p>
+              <p class="card-text text-center text-body">My Codepen</p>
             </div>
           </div>
         </a>
 
         <a
-          class="col-12 col-md-4 mb-2 align-items-center"
+          class="col-12 col-md-4 mb-5 d-flex justify-content-center"
           href="http://www.xing.com/profile/Stephanie_Geuder/cv"
           target="_blank"
           rel="noopener noreferrer"
@@ -125,17 +145,16 @@
                 d="M2.617 2.92c-.139 0-.248.053-.307.148-.061.099-.059.228.005.357l1.568 2.693a.015.015 0 0 1 0 .016l-2.458 4.33c-.064.128-.065.258-.004.356.059.095.168.147.306.147h2.314c.345 0 .5-.227.618-.44l2.5-4.402L5.566 3.36c-.115-.205-.291-.44-.645-.44H2.616z"
               ></path>
             </svg>
-            <img src="#" class="card-img-top" alt="Xing Logo" />
             <div class="card-body">
-              <p class="card-text">My XING</p>
+              <p class="card-text text-center text-body">My XING</p>
             </div>
           </div>
         </a>
       </div>
 
-      <article class="row shadow" id="biography">
-        <section class="col">
-          <h3>About me</h3>
+      <article class="row shadow mt-4" id="biography">
+        <section class="col-12 col-md-6 mb-3">
+          <h2 class="h4">About me</h2>
           <p>
             Franconia dolor ipsum sit amet, Wedderhex eingli Dasdn Fluchzeich?
             Ouweiala Sauere Zibfl ooreng Affnhidz Schlebbern gnietschn. Budn
@@ -152,37 +171,46 @@
           </p>
         </section>
 
-        <table class="col table table-striped">
-          <h3>CV</h3>
+        <table class="col-12 col-md-6 table table-striped mt-3 ml-1">
+          <h2 class="h4 ml-3">CV</h2>
           <tbody>
             <tr>
-              <th>x bis heute</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>May 2020 - today</th>
+              <td>
+                Web Development Bootcamp <br class="md-hidden" />at neuefische -
+                School and Pool for digital Talent
+              </td>
             </tr>
 
             <tr>
-              <th>x bis y</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>2016 - 2019</th>
+              <td>Deputy restaurant manager at Veggie Bros</td>
             </tr>
 
             <tr>
-              <th>x bis y</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>2013 - 2015</th>
+              <td>
+                Executive assistant at plan:es - Planungsbüro für Elektro- und
+                Sicherheitstechnik
+              </td>
             </tr>
 
             <tr>
-              <th>x bis y</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>2011 - 2013</th>
+              <td>Abitur at Berufliche Oberschule Würzburg</td>
             </tr>
 
             <tr>
-              <th>x bis y</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>2010 - 2011</th>
+              <td>Work and Travel in New Zealand</td>
             </tr>
 
             <tr>
-              <th>x bis y</th>
-              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <th>2007 - 2010</th>
+              <td>
+                Management Assistant for Retail Services Apprenticeship at
+                Deutsche Telekom AG
+              </td>
             </tr>
           </tbody>
         </table>
