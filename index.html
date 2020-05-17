@@ -10,10 +10,11 @@
     <script defer src="/js/jquery-3.5.1.min.js"></script>
     <script defer src="/js/bootstrap.bundle.min.js"></script>
 
-    <title>My personal website</title>
+    <title>Personal website Stephanie Geuder</title>
   </head>
 
-  <body class="container">
+  <body>
+    <!--
     <header
       class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-end shadow"
     >
@@ -24,16 +25,25 @@
         <a class="nav-link" href="#biography">Biography</a>
       </nav>
     </header>
+    -->
 
-    <main>
-      <div class="row shadow">
-        <figure class="col">
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand col mb-1 h1">Stephanie Geuder</span>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#biography">Biography</a>
+      </nav>
+    </div>
+
+    <main class="container">
+      <div class="row py-3 mt-5">
+        <figure class="col-12 col-md-6">
           <img
-            class="img-fluid"
+            class="img-fluid rounded"
             src="/img/WhatsApp Image 2020-05-15 at 18.26.15.jpeg"
             alt="Stephanie Geuder sitting on rocks on the shore of the river Elbe"
           />
-          <figcaption class="text-center md-text-left">
+          <figcaption class="text-center md-text-left mt-2">
             Me, enjoying the sun on the shore of river Elbe
           </figcaption>
         </figure>
@@ -41,7 +51,7 @@
         <div class="card mb-3" style="width: 18rem;">
           <img
             src="/img/WhatsApp Image 2020-05-15 at 18.26.15.jpeg"
-            class="card-img-top img-fluid round-circle"
+            class="card-img-top img-fluid rounded-circle"
             alt="Stephanie Geuder sitting on rocks on the shore of the river Elbe"
           />
           <div class="card-body">
@@ -75,18 +85,18 @@
         </div>
       </div>
 
-      <address class="row shadow mt-3 mb-5" id="contact">
+      <address class="row mt-3 mb-5 border py-3" id="contact">
         <a class="col-12 col-md-6 mb-4 text-break" href="040 00834822"
-          >Num: <br class="md-hidden mb-1" />040 00834822</a
+          >Num: <br class="d-block d-sm-none mb-1" />040 00834822</a
         >
         <a
           class="col-12 col-md-6"
           href="37314329+incredible-elk@users.noreply.github.com"
-          >Mail: <br class="md-hidden mb-1" />fish@neuefische.de</a
+          >Mail: <br class="d-block d-sm-none mb-1" />fish@neuefische.de</a
         >
       </address>
 
-      <div class="row shadow">
+      <div class="row">
         <a
           class="col-12 col-md-4 mb-2 d-flex justify-content-center"
           href="http://github.com/incredible-elk"
@@ -96,7 +106,7 @@
           <div class="card" style="width: 18rem;">
             <img
               src="/img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"
-              class="card-img-top img-fluid"
+              class="card-img-top img-fluid w-50 mx-auto py-5"
               alt="GitHub Logo"
             />
             <div class="card-body">
@@ -111,20 +121,20 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div class="card" style="width: 18rem;">
+          <div class="card text-center" style="width: 18rem;">
             <img
               src="/img/codepen/Button-Black-Large.png"
-              class="card-img-top"
+              class="card-img-top w-50 mx-auto py-5"
               alt="Codepen Logo"
             />
             <div class="card-body">
-              <p class="card-text text-center text-body">My Codepen</p>
+              <p class="card-text text-body">My Codepen</p>
             </div>
           </div>
         </a>
 
         <a
-          class="col-12 col-md-4 mb-5 d-flex justify-content-center"
+          class="col-12 col-md-4 mb-2 d-flex justify-content-center"
           href="http://www.xing.com/profile/Stephanie_Geuder/cv"
           target="_blank"
           rel="noopener noreferrer"
@@ -133,7 +143,7 @@
             <svg
               width="200"
               height="200"
-              class="LogoXdl-styles-icon-52966252"
+              class="LogoXdl-styles-icon-52966252 w-50 mx-auto"
               viewbox="0 0 16 16"
             >
               <path
@@ -141,7 +151,7 @@
                 d="M12.318 0c-.345 0-.494.217-.618.439L6.565 9.545l3.279 6.015c.114.204.291.44.644.44h2.305c.139 0 .248-.052.307-.148.061-.099.059-.229-.005-.357L9.842 9.552c-.003-.005-.003-.011 0-.015l5.11-9.034c.064-.127.065-.257.004-.356C14.897.052 14.788 0 14.649 0h-2.331z"
               ></path>
               <path
-                fill="currentColor"
+                fill="#006567"
                 d="M2.617 2.92c-.139 0-.248.053-.307.148-.061.099-.059.228.005.357l1.568 2.693a.015.015 0 0 1 0 .016l-2.458 4.33c-.064.128-.065.258-.004.356.059.095.168.147.306.147h2.314c.345 0 .5-.227.618-.44l2.5-4.402L5.566 3.36c-.115-.205-.291-.44-.645-.44H2.616z"
               ></path>
             </svg>
@@ -152,7 +162,7 @@
         </a>
       </div>
 
-      <article class="row shadow mt-4" id="biography">
+      <article class="row mt-5 mb-5" id="biography">
         <section class="col-12 col-md-6 mb-3">
           <h2 class="h4">About me</h2>
           <p>
@@ -171,49 +181,51 @@
           </p>
         </section>
 
-        <table class="col-12 col-md-6 table table-striped mt-3 ml-1">
+        <div class="col-12 col-md-6">
           <h2 class="h4 ml-3">CV</h2>
-          <tbody>
-            <tr>
-              <th>May 2020 - today</th>
-              <td>
-                Web Development Bootcamp <br class="md-hidden" />at neuefische -
-                School and Pool for digital Talent
-              </td>
-            </tr>
+          <table class="table table-striped mt-3 ml-1">
+            <tbody>
+              <tr>
+                <th>May 2020 - today</th>
+                <td>
+                  Web Development Bootcamp <br class="md-hidden" />at neuefische
+                  - School and Pool for digital Talent
+                </td>
+              </tr>
 
-            <tr>
-              <th>2016 - 2019</th>
-              <td>Deputy restaurant manager at Veggie Bros</td>
-            </tr>
+              <tr>
+                <th>2016 - 2019</th>
+                <td>Deputy restaurant manager at Veggie Bros</td>
+              </tr>
 
-            <tr>
-              <th>2013 - 2015</th>
-              <td>
-                Executive assistant at plan:es - Planungsbüro für Elektro- und
-                Sicherheitstechnik
-              </td>
-            </tr>
+              <tr>
+                <th>2013 - 2015</th>
+                <td>
+                  Executive assistant at plan:es - Planungsbüro für Elektro- und
+                  Sicherheitstechnik
+                </td>
+              </tr>
 
-            <tr>
-              <th>2011 - 2013</th>
-              <td>Abitur at Berufliche Oberschule Würzburg</td>
-            </tr>
+              <tr>
+                <th>2011 - 2013</th>
+                <td>Abitur at Berufliche Oberschule Würzburg</td>
+              </tr>
 
-            <tr>
-              <th>2010 - 2011</th>
-              <td>Work and Travel in New Zealand</td>
-            </tr>
+              <tr>
+                <th>2010 - 2011</th>
+                <td>Work and Travel in New Zealand</td>
+              </tr>
 
-            <tr>
-              <th>2007 - 2010</th>
-              <td>
-                Management Assistant for Retail Services Apprenticeship at
-                Deutsche Telekom AG
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <th>2007 - 2010</th>
+                <td>
+                  Management Assistant for Retail Services Apprenticeship at
+                  Deutsche Telekom AG
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </article>
     </main>
 
